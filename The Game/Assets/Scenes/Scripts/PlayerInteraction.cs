@@ -30,11 +30,15 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     SetNewCurrentInteractable(newInteractable);
                 }
+                else
+                {
+                    DisableCurrentInteractable();
+                }
             }
             else
-        {
-            DisableCurrentInteractable();
-        }
+            {
+                 DisableCurrentInteractable();
+            }
 
         }
         else

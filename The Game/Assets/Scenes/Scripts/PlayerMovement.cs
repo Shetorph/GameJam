@@ -20,14 +20,14 @@ public class PlayerMovement : MonoBehaviour
     [Header("MovementSettings")]
     //Movement Settings 
 	public float sensitivity = 50f;
-	public float moveSpeed = 4500f;
+	public float moveSpeed = 1500f;
 	public float walkSpeed = 20f;
 	public float runSpeed = 10f;
 	public bool grounded;
 	public bool onWall;
 
     //Private Floats
-    private float wallRunGravity = 1f;
+    private float wallRunGravity = 0.5f;
 	private float maxSlopeAngle = 35f;
 	private float wallRunRotation;
     private float slideSlowdown = 0.2f;
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 	private float xRotation;
 	private float sensMultiplier = 1f;
 	private float jumpCooldown = 0.25f;
-	private float jumpForce = 550f;
+	private float jumpForce = 250f;
 	private float x;
 	private float y;
 	private float vel;

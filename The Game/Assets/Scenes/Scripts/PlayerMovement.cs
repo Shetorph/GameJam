@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
 	private float xRotation;
 	private float sensMultiplier = 1f;
 	private float jumpCooldown = 0.25f;
-	private float jumpForce = 150f;
+	private float jumpForce = 200f;
 	private float x;
 	private float y;
 	private float vel;

@@ -6,14 +6,17 @@ using UnityEngine.UI;
 
 public class TextChange : MonoBehaviour
 {
-    public GameObject txtBasicMovement, txtExtras;
+    public GameObject txtTutorial1, txtTutorial2;
+    public Text txtTutorialQuest;
+    public string txtQuest;
 
     public void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
-            txtBasicMovement.SetActive(false);
-            txtExtras.SetActive(true);
+            txtTutorial1.SetActive(false);
+            txtTutorial2.SetActive(true);
+            txtTutorialQuest.text = txtQuest;
         }
     }
 }

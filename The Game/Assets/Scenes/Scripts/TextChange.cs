@@ -10,7 +10,7 @@ public class TextChange : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "player")
+        if (col.gameObject.tag == "Player")
         {
             txtBasicMovement.SetActive(false);
             txtExtras.SetActive(true);

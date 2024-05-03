@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Drawing;
 using Unity.VisualScripting;
 using UnityEditor.PackageManager.Requests;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class renkdegisme : MonoBehaviour
 {
     public GameObject yinyangrenk;
-    
     void Update()
     {
         if(Input.GetMouseButton(0))
@@ -22,5 +22,6 @@ public class renkdegisme : MonoBehaviour
         {
             yinyangrenk.GetComponent<Image>().color = new Color32(255,255,255,255);
         }
+
     }
 }

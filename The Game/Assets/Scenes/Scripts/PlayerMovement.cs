@@ -27,17 +27,17 @@ public class PlayerMovement : MonoBehaviour
 	public bool onWall;
 
     //Private Floats
-    private float wallRunGravity = 0.5f;
+    private float wallRunGravity = 0.1f;
 	private float maxSlopeAngle = 35f;
 	private float wallRunRotation;
-    private float slideSlowdown = 0.2f;
+    private float slideSlowdown = 0.3f;
 	private float actualWallRotation;
 	private float wallRotationVel;
 	private float desiredX;
 	private float xRotation;
 	private float sensMultiplier = 1f;
 	private float jumpCooldown = 0.25f;
-	private float jumpForce = 250f;
+	private float jumpForce = 150f;
 	private float x;
 	private float y;
 	private float vel;
@@ -362,7 +362,7 @@ public class PlayerMovement : MonoBehaviour
 		if (wallRunning)
 		{
 			rb.AddForce(-wallNormalVector * Time.deltaTime * moveSpeed);
-			rb.AddForce(Vector3.up * Time.deltaTime * rb.mass * 100f * wallRunGravity);
+			rb.AddForce(Vector3.up * Time.deltaTime * rb.mass * 100 * wallRunGravity);
 		}
 	}
 
@@ -396,7 +396,7 @@ public class PlayerMovement : MonoBehaviour
 		if (!grounded && readyToWallrun)
 		{
 			wallNormalVector = normal;
-			float num = 20f;
+			float num = 15f;
 			if (!wallRunning)
 			{
 				rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);

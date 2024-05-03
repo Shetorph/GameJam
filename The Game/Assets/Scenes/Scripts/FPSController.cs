@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class FPSController : MonoBehaviour
@@ -34,7 +33,7 @@ public class FPSController : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
-        // L-Shift Koþma
+        // L-Shift Koï¿½ma
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
         float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
@@ -42,7 +41,7 @@ public class FPSController : MonoBehaviour
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
         #endregion
 
-        #region Zýplama
+        #region Zï¿½plama
         if(Input.GetKeyDown(KeyCode.Space) && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
@@ -58,7 +57,7 @@ public class FPSController : MonoBehaviour
         }
         #endregion
 
-        #region Dönme
+        #region Dï¿½nme
         characterController.Move(moveDirection * Time.deltaTime);
 
         if (canMove)

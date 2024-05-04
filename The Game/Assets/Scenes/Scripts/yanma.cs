@@ -10,7 +10,7 @@ public class yanma : MonoBehaviour
     void OnTriggerEnter(Collider x) {
         if(x.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }        
     }
 

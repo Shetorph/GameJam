@@ -396,7 +396,7 @@ public class PlayerMovement : MonoBehaviour
 		if (!grounded && readyToWallrun)
 		{
 			wallNormalVector = normal;
-			float num = 10f;
+			float num = 13f;
 			if (!wallRunning)
 			{
 				rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);

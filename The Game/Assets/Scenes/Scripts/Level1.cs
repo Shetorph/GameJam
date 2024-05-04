@@ -22,7 +22,7 @@ public class Level1 : MonoBehaviour
         }
         if(anahtar2.activeSelf == true)
         {
-            kapi.SetActive(false);
+            kapi.SetActive(true);
         }
     }
     

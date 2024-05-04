@@ -15,4 +15,5 @@ public class Interactable : MonoBehaviour
     {
         onInteraction.Invoke();
     }
+    
 }

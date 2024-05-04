@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Colliders2 : MonoBehaviour
 {
-    public BoxCollider beyaz;
+    public Collider beyaz;
    void Update()
     {
         if(Input.GetMouseButton(0))

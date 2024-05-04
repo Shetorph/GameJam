@@ -8,8 +8,7 @@ public class yanma : MonoBehaviour
     void OnTriggerEnter(Collider x) {
         if(x.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(0);
-            Debug.Log("etkilesim basarili");
+            SceneManager.LoadScene(1);
         }
     }
 }

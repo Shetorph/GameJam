@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 413670246}
   - component: {fileID: 413670245}
   - component: {fileID: 413670244}
-  - component: {fileID: 413670243}
+  - component: {fileID: 413670247}
   m_Layer: 3
   m_Name: TP_Wall
   m_TagString: siyah
@@ -519,19 +519,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1754559975}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &413670243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413670241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8f0716646177fb4ab699b8e9d58a089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  siyah: {fileID: 413670244}
 --- !u!65 &413670244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -573,7 +560,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f0c37fefa19f19849a1568aaa875251a, type: 2}
+  - {fileID: 2100000, guid: de1bba5486bbcac45979bdeaa9a05ccf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -603,6 +590,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413670241}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &413670247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413670241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb67fe531b0a724d92974c2cbde32ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &435027379
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class topSil : MonoBehaviour
     void OnCollisionEnter(Collision x) {
         if(x.collider.tag == "yandin")
         {
-            Object.Destroy(this.gameObject);
+            Object.Destroy(gameObject);
         }
     }
 }

@@ -50,11 +50,12 @@ public class PlayerInteraction : MonoBehaviour
     void SetNewCurrentInteractable(Interactable newInteractable)
     {
          currentInteractable = newInteractable;
-         
+         HUDController.instance.EnabledInteractionText(currentInteractable.message);
     }
 
     void DisableCurrentInteractable()
     {
+        HUDController.instance.DisableInteractionText();
         if(currentInteractable)
         {
             currentInteractable = null;

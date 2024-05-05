@@ -7,7 +7,7 @@ public class birlestir : MonoBehaviour
     public GameObject kristal,kristal1,kristal2,kristal3,birlestirr;
     
      void Update() {
-       if(kristal.activeSelf == false && kristal1.activeSelf == false && kristal2.activeSelf == false && kristal3.activeSelf == false)
+       if(kristal.activeSelf == true && kristal1.activeSelf == true && kristal2.activeSelf == true && kristal3.activeSelf == true)
        {
          birlestirr.SetActive(true);
        } 

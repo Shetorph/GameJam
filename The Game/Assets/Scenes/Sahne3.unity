@@ -3580,10 +3580,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ede0f5f59b6c2c4eb879377d0d95bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kristal: {fileID: 1247671698}
-  kristal1: {fileID: 449647360}
-  kristal2: {fileID: 1252713827}
-  kristal3: {fileID: 683212542}
+  kristal: {fileID: 1122599221}
+  kristal1: {fileID: 539914789}
+  kristal2: {fileID: 1698544154}
+  kristal3: {fileID: 1712902672}
   birlestirr: {fileID: 779467375}
 --- !u!114 &201073953
 MonoBehaviour:
